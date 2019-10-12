@@ -3,10 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@types/classnames": "^2.2.9",
     "@types/jest": "24.0.18",
     "@types/node": "12.7.12",
     "@types/react": "16.9.5",
     "@types/react-dom": "16.9.1",
+    "classnames": "^2.2.6",
+    "node-sass": "^4.12.0",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
@@ -14,7 +17,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "tsc -p tsconfig.tsc.json && cp -r ./src/styles ./dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -32,5 +35,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/faker": "^4.1.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "faker": "^4.1.0"
   }
 }

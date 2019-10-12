@@ -1,0 +1,22 @@
+.acm-button {
+  font-size: 14px;
+  background-color: orangered;
+  color: #fff;
+  height: 38px;
+  border-radius: 3px;
+  transition: all .2s;
+
+  &__small {
+    height: 20px;
+    font-size: 10px;
+  }
+
+  &__large {
+    height: 50px;
+    font-size: 30px;
+  }
+
+  &__fluid {
+    width: 100%;
+  }
+}
